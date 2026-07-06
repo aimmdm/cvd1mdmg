@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#001f4d">
+<meta name="msapplication-TileColor" content="#001f4d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="author" content="MDMG">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="copyright" content="MDMG 2024">
+<meta name="description" content="Buat CV profesional online gratis dengan template modern. Download PDF dan PNG berkualitas tinggi. Platform dokumen digital nomor 1 Indonesia oleh MDMG.">
+<meta name="keywords" content="cv builder, resume maker, buat cv online, cv profesional, template cv, cv indonesia, curriculum vitae, resume pdf, cv gratis, cv modern, cv design, job application, lamaran kerja, cv template, resume builder">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CV Builder Online Gratis | MDMG">
+<meta property="og:description" content="Buat CV profesional online gratis dengan template modern. Download PDF dan PNG berkualitas tinggi.">
+<meta property="og:url" content="https://www.mainilmu.pro">
+<meta property="og:site_name" content="MDMG">
+<meta property="og:image" content="https://www.mainilmu.pro/og-cv-builder.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CV Builder Online Gratis | MDMG">
+<meta name="twitter:description" content="Buat CV profesional online gratis dengan template modern. Download PDF dan PNG.">
+<meta name="twitter:image" content="https://www.mainilmu.pro/og-cv-builder.png">
+<link rel="canonical" href="https://www.mainilmu.pro/cv-builder">
+<title>CV Builder Online Gratis | MDMG</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📄%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📄%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "CV Builder MDMG",
+  "description": "Buat CV profesional online gratis dengan template modern",
+  "url": "https://www.mainilmu.pro/cv-builder",
+  "author": {
+    "@type": "Organization",
+    "name": "MDMG",
+    "url": "https://www.mainilmu.pro"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "2000",
+    "highPrice": "50000",
+    "priceCurrency": "IDR"
+  },
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://script.google.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--primary:#001f4d;
+--primary-hover:#002d70;
+--primary-active:#003a8c;
+--bg:#ffffff;
+--surface:#f5f7fa;
+--surface-alt:#e9edf3;
+--text-primary:#001f4d;
+--text-secondary:#4a5a75;
+--text-muted:#8a95a8;
+--border:#d0d7e2;
+--success:#2e7d32;
+--success-bg:#e8f5e9;
+--warning:#f57c00;
+--warning-bg:#fff3e0;
+--danger:#d32f2f;
+--danger-bg:#ffebee;
+--radius-sm:8px;
+--radius-md:12px;
+--radius-lg:16px;
+--radius-xl:20px;
+--radius-full:9999px;
+--shadow-soft:0 2px 8px rgba(0,31,77,0.06);
+--shadow-card:0 4px 16px rgba(0,31,77,0.08);
+--shadow-elevated:0 8px 32px rgba(0,31,77,0.12);
+--shadow-modal:0 16px 64px rgba(0,31,77,0.2);
+--transition:cubic-bezier(0.4,0,0.2,1) 300ms;
+--z-header:100;
+--z-badge:50;
+--z-overlay:9998;
+--z-modal:9999;
+--z-toast:10000;
+--font-body:'Poppins',sans-serif;
+--font-brand:'Orbitron',sans-serif;
+--font-code:'Fira Code',monospace;
+}
+[data-theme="dark"]{
+--bg:#0a0e1a;
+--surface:#111827;
+--surface-alt:#1a2236;
+--text-primary:#e8edf5;
+--text-secondary:#a0aec0;
+--text-muted:#6b7a90;
+--border:#2a3548;
+--shadow-soft:0 2px 8px rgba(0,0,0,0.3);
+--shadow-card:0 4px 16px rgba(0,0,0,0.4);
+--shadow-elevated:0 8px 32px rgba(0,0,0,0.5);
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+font-family:var(--font-body);
+background:var(--surface);
+color:var(--text-primary);
+line-height:1.6;
+min-height:100vh;
+overflow-x:hidden;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--primary);border-radius:var(--radius-full)}
+::-webkit-scrollbar-thumb:hover{background:var(--primary-hover)}
+h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.3}
+a{color:var(--primary);text-decoration:none;transition:color var(--transition)}
+a:hover{color:var(--primary-hover)}
+button{font-family:var(--font-body);cursor:pointer;border:none;background:none;font-size:inherit}
+input,textarea,select{font-family:var(--font-body);font-size:inherit}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:4px}
+.header{
+position:sticky;top:0;z-index:var(--z-header);
+background:var(--bg);
+border-bottom:1px solid var(--border);
+box-shadow:var(--shadow-soft);
+padding:12px 24px;
+display:flex;align-items:center;justify-content:space-between;
+gap:16px;
+}
+.header-left{display:flex;align-items:center;gap:12px}
+.header-logo{
+width:38px;height:38px;
+background:var(--primary);
+border-radius:var(--radius-sm);
+display:flex;align-items:center;justify-content:center;
+color:#fff;
+font-family:var(--font-brand);
+font-weight:800;font-size:14px;
+}
+.header-brand{font-family:var(--font-brand);font-weight:700;font-size:18px;color:var(--primary)}
+.header-tagline{font-size:11px;color:var(--text-muted);font-weight:400;display:block}
+.header-right{display:flex;align-items:center;gap:12px}
+.btn{
+display:inline-flex;align-items:center;gap:8px;
+padding:10px 20px;
+border-radius:var(--radius-md);
+font-weight:600;font-size:14px;
+transition:all var(--transition);
+white-space:nowrap;
+min-height:44px;
+}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-hover);color:#fff;transform:translateY(-1px);box-shadow:var(--shadow-card)}
+.btn-primary:active{background:var(--primary-active);transform:translateY(0)}
+.btn-secondary{background:var(--surface-alt);color:var(--text-primary);border:1px solid var(--border)}
+.btn-secondary:hover{background:var(--border);color:var(--text-primary)}
+.btn-danger{background:var(--danger);color:#fff}
+.btn-danger:hover{background:#b71c1c;color:#fff}
+.btn-success{background:var(--success);color:#fff}
+.btn-success:hover{background:#1b5e20;color:#fff}
+.btn-full{width:100%;justify-content:center}
+.btn-icon{width:44px;height:44px;padding:0;justify-content:center}
+.main-layout{
+display:grid;
+grid-template-columns:420px 1fr;
+gap:24px;
+padding:24px;
+max-width:1600px;
+margin:0 auto;
+min-height:calc(100vh - 70px);
+}
+.sidebar{
+background:var(--bg);
+border-radius:var(--radius-lg);
+box-shadow:var(--shadow-card);
+padding:24px;
+overflow-y:auto;
+max-height:calc(100vh - 110px);
+position:sticky;top:90px;
+}
+.sidebar-section{margin-bottom:24px}
+.sidebar-section-title{
+font-size:14px;font-weight:700;color:var(--primary);
+text-transform:uppercase;letter-spacing:0.5px;
+margin-bottom:12px;
+display:flex;align-items:center;gap:8px;
+cursor:pointer;
+user-select:none;
+}
+.sidebar-section-title i{font-size:12px;transition:transform var(--transition)}
+.sidebar-section-title.collapsed i{transform:rotate(-90deg)}
+.sidebar-section-content{overflow:hidden;transition:max-height 300ms ease}
+.sidebar-section-content.collapsed{max-height:0!important}
+.form-group{margin-bottom:14px}
+.form-label{
+display:block;font-size:12px;font-weight:600;color:var(--text-secondary);
+margin-bottom:6px;text-transform:uppercase;letter-spacing:0.3px;
+}
+.form-input,.form-textarea,.form-select{
+width:100%;padding:10px 14px;
+border:1px solid var(--border);
+border-radius:var(--radius-sm);
+background:var(--bg);
+color:var(--text-primary);
+font-size:14px;
+transition:border-color var(--transition),box-shadow var(--transition);
+}
+.form-input:focus,.form-textarea:focus,.form-select:focus{
+border-color:var(--primary);
+box-shadow:0 0 0 3px rgba(0,31,77,0.1);
+outline:none;
+}
+.form-textarea{resize:vertical;min-height:80px;font-family:var(--font-body)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.template-switcher{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.template-btn{
+padding:12px 8px;
+border:2px solid var(--border);
+border-radius:var(--radius-sm);
+background:var(--bg);
+font-size:12px;font-weight:600;
+color:var(--text-secondary);
+transition:all var(--transition);
+text-align:center;
+}
+.template-btn:hover{border-color:var(--primary);color:var(--primary)}
+.template-btn.active{border-color:var(--primary);background:rgba(0,31,77,0.05);color:var(--primary)}
+.template-btn i{display:block;font-size:20px;margin-bottom:6px}
+.download-section{
+background:var(--surface);
+border-radius:var(--radius-md);
+padding:16px;
+margin-top:16px;
+}
+.download-note{font-size:11px;color:var(--text-muted);margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.download-buttons{display:flex;flex-direction:column;gap:8px}
+.preview-panel{
+display:flex;flex-direction:column;
+gap:16px;
+}
+.preview-toolbar{
+display:flex;align-items:center;justify-content:space-between;
+background:var(--bg);
+border-radius:var(--radius-md);
+padding:12px 16px;
+box-shadow:var(--shadow-soft);
+}
+.zoom-controls{display:flex;align-items:center;gap:8px}
+.zoom-btn{
+width:36px;height:36px;
+border-radius:var(--radius-sm);
+background:var(--surface);
+border:1px solid var(--border);
+display:flex;align-items:center;justify-content:center;
+color:var(--text-primary);
+transition:all var(--transition);
+}
+.zoom-btn:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+.zoom-value{font-size:13px;font-weight:600;color:var(--text-secondary);min-width:50px;text-align:center}
+.preview-wrapper{
+background:var(--surface-alt);
+border-radius:var(--radius-lg);
+padding:32px;
+overflow:auto;
+flex:1;
+display:flex;justify-content:center;
+min-height:600px;
+}
+.doc-preview{
+background:#fff;
+box-shadow:var(--shadow-elevated);
+width:210mm;
+min-height:297mm;
+transform-origin:top center;
+transition:transform 200ms ease;
+position:relative;
+user-select:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-webkit-touch-callout:none;
+}
+.doc-preview img{
+user-drag:none;
+-webkit-user-drag:none;
+-moz-user-drag:none;
+pointer-events:none;
+max-width:100%;
+}
+.cv-template{width:100%;min-height:297mm;position:relative;overflow:hidden}
+.cv-template-1 .cv-header{
+background:var(--primary);
+color:#fff;
+padding:40px 40px 60px;
+position:relative;
+overflow:hidden;
+}
+.cv-template-1 .cv-header::after{
+content:'';position:absolute;bottom:-30px;left:0;right:0;
+height:60px;
+background:var(--bg);
+border-radius:50% 50% 0 0;
+}
+.cv-template-1 .cv-header-content{display:flex;align-items:center;gap:24px;position:relative;z-index:1}
+.cv-template-1 .cv-avatar{
+width:120px;height:120px;
+border-radius:50%;
+border:4px solid rgba(255,255,255,0.3);
+overflow:hidden;
+flex-shrink:0;
+background:rgba(255,255,255,0.1);
+display:flex;align-items:center;justify-content:center;
+font-size:48px;color:rgba(255,255,255,0.5);
+}
+.cv-template-1 .cv-avatar img{width:100%;height:100%;object-fit:cover}
+.cv-template-1 .cv-name{font-size:32px;font-weight:800;letter-spacing:1px;margin-bottom:4px}
+.cv-template-1 .cv-profession{font-size:14px;opacity:0.9;font-weight:400}
+.cv-template-1 .cv-body{display:grid;grid-template-columns:280px 1fr;gap:0;margin-top:-20px;position:relative;z-index:2}
+.cv-template-1 .cv-sidebar{
+background:var(--primary);
+color:#fff;
+padding:40px 24px;
+min-height:600px;
+}
+.cv-template-1 .cv-sidebar-section{margin-bottom:28px}
+.cv-template-1 .cv-sidebar-title{
+font-size:13px;font-weight:700;
+text-transform:uppercase;letter-spacing:1.5px;
+margin-bottom:14px;
+display:flex;align-items:center;gap:8px;
+padding-bottom:8px;
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.cv-template-1 .cv-sidebar-title i{font-size:16px}
+.cv-template-1 .cv-contact-item{
+display:flex;align-items:flex-start;gap:10px;
+margin-bottom:12px;font-size:12px;
+}
+.cv-template-1 .cv-contact-item i{
+width:28px;height:28px;
+background:rgba(255,255,255,0.15);
+border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+font-size:12px;flex-shrink:0;
+}
+.cv-template-1 .cv-contact-item span{line-height:1.4;word-break:break-word}
+.cv-template-1 .cv-skill-item{
+display:flex;align-items:center;justify-content:space-between;
+margin-bottom:10px;font-size:12px;
+}
+.cv-template-1 .cv-skill-name{font-weight:500}
+.cv-template-1 .cv-skill-stars{color:#ffd700;font-size:11px;letter-spacing:1px}
+.cv-template-1 .cv-language-item{
+display:flex;flex-direction:column;align-items:center;
+margin-bottom:12px;
+}
+.cv-template-1 .cv-lang-circle{
+width:56px;height:56px;
+border-radius:50%;
+border:3px solid rgba(255,255,255,0.3);
+display:flex;align-items:center;justify-content:center;
+font-size:13px;font-weight:700;
+margin-bottom:6px;
+position:relative;
+}
+.cv-template-1 .cv-lang-name{font-size:10px;text-transform:uppercase;letter-spacing:0.5px}
+.cv-template-1 .cv-main{padding:40px 32px;background:#fff}
+.cv-template-1 .cv-main-section{margin-bottom:28px}
+.cv-template-1 .cv-main-title{
+font-size:16px;font-weight:700;
+color:var(--primary);
+text-transform:uppercase;letter-spacing:1px;
+margin-bottom:16px;
+display:flex;align-items:center;gap:10px;
+padding-bottom:8px;
+border-bottom:2px solid var(--primary);
+}
+.cv-template-1 .cv-main-title i{
+width:32px;height:32px;
+background:var(--primary);
+color:#fff;
+border-radius:var(--radius-sm);
+display:flex;align-items:center;justify-content:center;
+font-size:14px;
+}
+.cv-template-1 .cv-main-title-text{flex:1}
+.cv-template-1 .cv-about-text{font-size:13px;color:var(--text-secondary);line-height:1.7}
+.cv-template-1 .cv-experience-item,.cv-template-1 .cv-education-item{
+margin-bottom:20px;
+padding-left:16px;
+border-left:3px solid var(--primary);
+}
+.cv-template-1 .cv-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;flex-wrap:wrap;gap:8px}
+.cv-template-1 .cv-item-title{font-size:14px;font-weight:700;color:var(--text-primary)}
+.cv-template-1 .cv-item-date{font-size:11px;color:var(--text-muted);font-weight:600;white-space:nowrap}
+.cv-template-1 .cv-item-subtitle{font-size:12px;color:var(--primary);font-weight:600;margin-bottom:6px}
+.cv-template-1 .cv-item-desc{font-size:12px;color:var(--text-secondary);line-height:1.6}
+.cv-template-2 .cv-header{
+background:linear-gradient(135deg,var(--primary) 0%,#003a8c 100%);
+color:#fff;
+padding:50px 40px;
+display:flex;align-items:center;gap:30px;
+}
+.cv-template-2 .cv-avatar{
+width:130px;height:130px;
+border-radius:var(--radius-lg);
+border:4px solid rgba(255,255,255,0.3);
+overflow:hidden;flex-shrink:0;
+background:rgba(255,255,255,0.1);
+display:flex;align-items:center;justify-content:center;
+font-size:52px;color:rgba(255,255,255,0.5);
+}
+.cv-template-2 .cv-avatar img{width:100%;height:100%;object-fit:cover}
+.cv-template-2 .cv-name{font-size:36px;font-weight:800;letter-spacing:0.5px;margin-bottom:6px}
+.cv-template-2 .cv-profession{font-size:15px;opacity:0.9;font-weight:400}
+.cv-template-2 .cv-body{display:grid;grid-template-columns:1fr 300px;gap:0}
+.cv-template-2 .cv-main{padding:36px 32px;background:#fff}
+.cv-template-2 .cv-main-section{margin-bottom:28px}
+.cv-template-2 .cv-main-title{
+font-size:18px;font-weight:700;
+color:var(--primary);
+margin-bottom:16px;
+display:flex;align-items:center;gap:10px;
+}
+.cv-template-2 .cv-main-title i{color:var(--primary);font-size:20px}
+.cv-template-2 .cv-about-text{font-size:13px;color:var(--text-secondary);line-height:1.7}
+.cv-template-2 .cv-experience-item,.cv-template-2 .cv-education-item{
+margin-bottom:20px;
+}
+.cv-template-2 .cv-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;flex-wrap:wrap;gap:8px}
+.cv-template-2 .cv-item-title{font-size:15px;font-weight:700;color:var(--text-primary)}
+.cv-template-2 .cv-item-date{font-size:12px;color:var(--text-muted);font-weight:600}
+.cv-template-2 .cv-item-subtitle{font-size:13px;color:var(--primary);font-weight:600;margin-bottom:6px}
+.cv-template-2 .cv-item-desc{font-size:12px;color:var(--text-secondary);line-height:1.6}
+.cv-template-2 .cv-sidebar{
+background:var(--surface);
+padding:36px 24px;
+border-left:1px solid var(--border);
+}
+.cv-template-2 .cv-sidebar-section{margin-bottom:28px}
+.cv-template-2 .cv-sidebar-title{
+font-size:14px;font-weight:700;
+color:var(--primary);
+text-transform:uppercase;letter-spacing:1px;
+margin-bottom:14px;
+display:flex;align-items:center;gap:8px;
+padding-bottom:8px;
+border-bottom:2px solid var(--primary);
+}
+.cv-template-2 .cv-sidebar-title i{font-size:16px}
+.cv-template-2 .cv-contact-item{
+display:flex;align-items:flex-start;gap:10px;
+margin-bottom:12px;font-size:12px;
+}
+.cv-template-2 .cv-contact-item i{
+width:28px;height:28px;
+background:var(--primary);
+color:#fff;
+border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+font-size:11px;flex-shrink:0;
+}
+.cv-template-2 .cv-contact-item span{line-height:1.4;word-break:break-word;color:var(--text-secondary)}
+.cv-template-2 .cv-skill-item{margin-bottom:12px}
+.cv-template-2 .cv-skill-name{font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:4px}
+.cv-template-2 .cv-skill-bar{height:6px;background:var(--border);border-radius:var(--radius-full);overflow:hidden}
+.cv-template-2 .cv-skill-fill{height:100%;background:var(--primary);border-radius:var(--radius-full);transition:width 500ms ease}
+.cv-template-2 .cv-language-item{
+display:flex;justify-content:space-between;align-items:center;
+margin-bottom:10px;font-size:12px;
+}
+.cv-template-2 .cv-lang-name{font-weight:600;color:var(--text-primary)}
+.cv-template-2 .cv-lang-level{color:var(--text-muted);font-size:11px}
+.cv-template-3 .cv-header{
+background:#fff;
+padding:40px;
+border-bottom:4px solid var(--primary);
+display:flex;align-items:center;gap:24px;
+}
+.cv-template-3 .cv-avatar{
+width:100px;height:100px;
+border-radius:50%;
+border:3px solid var(--primary);
+overflow:hidden;flex-shrink:0;
+background:var(--surface);
+display:flex;align-items:center;justify-content:center;
+font-size:40px;color:var(--text-muted);
+}
+.cv-template-3 .cv-avatar img{width:100%;height:100%;object-fit:cover}
+.cv-template-3 .cv-name{font-size:28px;font-weight:800;color:var(--primary);letter-spacing:0.5px;margin-bottom:4px}
+.cv-template-3 .cv-profession{font-size:14px;color:var(--text-secondary);font-weight:500}
+.cv-template-3 .cv-body{display:grid;grid-template-columns:1fr 260px;gap:0}
+.cv-template-3 .cv-main{padding:32px;background:#fff}
+.cv-template-3 .cv-main-section{margin-bottom:24px}
+.cv-template-3 .cv-main-title{
+font-size:15px;font-weight:700;
+color:var(--primary);
+text-transform:uppercase;letter-spacing:1.5px;
+margin-bottom:14px;
+padding-bottom:6px;
+border-bottom:1px solid var(--border);
+}
+.cv-template-3 .cv-about-text{font-size:13px;color:var(--text-secondary);line-height:1.7}
+.cv-template-3 .cv-experience-item,.cv-template-3 .cv-education-item{
+margin-bottom:18px;
+position:relative;
+padding-left:20px;
+}
+.cv-template-3 .cv-experience-item::before,.cv-template-3 .cv-education-item::before{
+content:'';position:absolute;left:0;top:6px;
+width:10px;height:10px;
+background:var(--primary);
+border-radius:50%;
+}
+.cv-template-3 .cv-item-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;flex-wrap:wrap;gap:8px}
+.cv-template-3 .cv-item-title{font-size:14px;font-weight:700;color:var(--text-primary)}
+.cv-template-3 .cv-item-date{font-size:11px;color:var(--text-muted);font-weight:600}
+.cv-template-3 .cv-item-subtitle{font-size:12px;color:var(--primary);font-weight:600;margin-bottom:6px}
+.cv-template-3 .cv-item-desc{font-size:12px;color:var(--text-secondary);line-height:1.6}
+.cv-template-3 .cv-sidebar{
+background:var(--surface);
+padding:32px 20px;
+border-left:1px solid var(--border);
+}
+.cv-template-3 .cv-sidebar-section{margin-bottom:24px}
+.cv-template-3 .cv-sidebar-title{
+font-size:13px;font-weight:700;
+color:var(--primary);
+text-transform:uppercase;letter-spacing:1px;
+margin-bottom:12px;
+}
+.cv-template-3 .cv-contact-item{
+display:flex;align-items:flex-start;gap:8px;
+margin-bottom:10px;font-size:11px;
+}
+.cv-template-3 .cv-contact-item i{color:var(--primary);font-size:12px;width:16px;flex-shrink:0;margin-top:2px}
+.cv-template-3 .cv-contact-item span{line-height:1.4;word-break:break-word;color:var(--text-secondary)}
+.cv-template-3 .cv-skill-item{
+display:flex;align-items:center;justify-content:space-between;
+margin-bottom:8px;font-size:11px;
+}
+.cv-template-3 .cv-skill-name{font-weight:600;color:var(--text-primary)}
+.cv-template-3 .cv-skill-dots{display:flex;gap:3px}
+.cv-template-3 .cv-skill-dot{width:8px;height:8px;border-radius:50%;background:var(--border)}
+.cv-template-3 .cv-skill-dot.filled{background:var(--primary)}
+.cv-template-3 .cv-language-item{
+display:flex;justify-content:space-between;align-items:center;
+margin-bottom:8px;font-size:11px;
+padding:6px 10px;
+background:#fff;
+border-radius:var(--radius-sm);
+}
+.cv-template-3 .cv-lang-name{font-weight:600;color:var(--text-primary)}
+.cv-template-3 .cv-lang-level{color:var(--primary);font-weight:700}
+.modal-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:rgba(0,31,77,0.6);
+backdrop-filter:blur(4px);
+z-index:var(--z-overlay);
+display:none;
+align-items:center;justify-content:center;
+padding:20px;
+}
+.modal-overlay.active{display:flex}
+.modal{
+background:var(--bg);
+border-radius:var(--radius-xl);
+box-shadow:var(--shadow-modal);
+max-width:480px;
+width:100%;
+max-height:90vh;
+overflow-y:auto;
+position:relative;
+}
+.modal-close{
+position:absolute;top:16px;right:16px;
+width:36px;height:36px;
+border-radius:50%;
+background:var(--surface);
+display:flex;align-items:center;justify-content:center;
+color:var(--text-secondary);
+font-size:16px;
+transition:all var(--transition);
+z-index:10;
+}
+.modal-close:hover{background:var(--danger);color:#fff}
+.modal-header{padding:28px 28px 0;text-align:center}
+.modal-title{font-size:22px;font-weight:700;color:var(--text-primary);margin-bottom:6px}
+.modal-subtitle{font-size:13px;color:var(--text-muted)}
+.modal-body{padding:24px 28px}
+.qris-container{text-align:center;margin-bottom:20px}
+.qris-img{
+width:180px;height:180px;
+border:2px solid var(--border);
+border-radius:var(--radius-md);
+padding:8px;
+background:#fff;
+}
+.qris-instruction{font-size:12px;color:var(--text-muted);margin-top:10px;line-height:1.5}
+.wa-button{
+display:inline-flex;align-items:center;gap:8px;
+padding:10px 20px;
+background:#25d366;
+color:#fff;
+border-radius:var(--radius-full);
+font-size:13px;font-weight:600;
+margin-bottom:20px;
+transition:all var(--transition);
+}
+.wa-button:hover{background:#128c7e;color:#fff;transform:translateY(-1px)}
+.paket-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.paket-card{
+padding:14px;
+border:2px solid var(--border);
+border-radius:var(--radius-md);
+text-align:center;
+transition:all var(--transition);
+cursor:pointer;
+}
+.paket-card:hover{border-color:var(--primary);background:rgba(0,31,77,0.02)}
+.paket-card.selected{border-color:var(--primary);background:rgba(0,31,77,0.05)}
+.paket-price{font-size:18px;font-weight:700;color:var(--primary);margin-bottom:2px}
+.paket-desc{font-size:11px;color:var(--text-muted)}
+.voucher-input-wrapper{margin-bottom:16px}
+.voucher-input{
+width:100%;
+padding:14px;
+border:2px solid var(--border);
+border-radius:var(--radius-md);
+font-family:var(--font-code);
+font-size:20px;
+text-align:center;
+text-transform:uppercase;
+letter-spacing:2px;
+font-weight:600;
+color:var(--text-primary);
+background:var(--bg);
+transition:border-color var(--transition);
+}
+.voucher-input:focus{border-color:var(--primary);outline:none;box-shadow:0 0 0 3px rgba(0,31,77,0.1)}
+.voucher-status{
+padding:12px;
+border-radius:var(--radius-sm);
+font-size:13px;
+margin-bottom:16px;
+display:none;
+}
+.voucher-status.success{display:block;background:var(--success-bg);color:var(--success);border:1px solid var(--success)}
+.voucher-status.error{display:block;background:var(--danger-bg);color:var(--danger);border:1px solid var(--danger)}
+.session-badge{
+position:fixed;
+bottom:20px;right:20px;
+background:var(--primary);
+color:#fff;
+padding:12px 18px;
+border-radius:var(--radius-md);
+box-shadow:var(--shadow-elevated);
+z-index:var(--z-badge);
+font-size:12px;
+cursor:pointer;
+transition:all var(--transition);
+display:none;
+max-width:280px;
+}
+.session-badge:hover{transform:translateY(-2px);box-shadow:var(--shadow-modal)}
+.session-badge.visible{display:block}
+.session-badge-title{font-weight:700;margin-bottom:4px;font-size:13px}
+.session-badge-info{opacity:0.9;font-size:11px;line-height:1.4}
+.loading-overlay{
+position:fixed;top:0;left:0;right:0;bottom:0;
+background:rgba(0,31,77,0.8);
+backdrop-filter:blur(4px);
+z-index:var(--z-modal);
+display:none;
+align-items:center;justify-content:center;
+flex-direction:column;gap:16px;
+color:#fff;
+}
+.loading-overlay.active{display:flex}
+.loading-spinner{
+width:48px;height:48px;
+border:4px solid rgba(255,255,255,0.2);
+border-top-color:#fff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-text{font-size:16px;font-weight:600}
+.bottom-bar{
+display:none;
+position:fixed;bottom:0;left:0;right:0;
+background:var(--bg);
+border-top:1px solid var(--border);
+padding:12px 16px;
+z-index:var(--z-header);
+box-shadow:0 -4px 16px rgba(0,31,77,0.1);
+}
+.bottom-bar-buttons{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.auto-save-info{
+font-size:11px;color:var(--text-muted);
+padding:8px 0;
+display:flex;align-items:center;gap:6px;
+}
+.auto-save-info i{color:var(--success)}
+.import-section{margin-top:12px}
+.import-buttons{display:flex;gap:8px;margin-bottom:8px}
+.import-buttons .btn{flex:1;font-size:12px;padding:8px}
+.json-textarea{
+width:100%;
+padding:10px;
+border:1px solid var(--border);
+border-radius:var(--radius-sm);
+font-family:var(--font-code);
+font-size:11px;
+resize:vertical;
+min-height:80px;
+background:var(--bg);
+color:var(--text-primary);
+}
+.skill-row,.language-row{
+display:grid;
+grid-template-columns:1fr 80px 36px;
+gap:8px;
+margin-bottom:8px;
+align-items:center;
+}
+.skill-row .form-input,.language-row .form-input{font-size:12px;padding:8px}
+.add-btn{
+width:100%;padding:8px;
+border:1px dashed var(--border);
+border-radius:var(--radius-sm);
+background:var(--surface);
+color:var(--text-secondary);
+font-size:12px;font-weight:600;
+transition:all var(--transition);
+margin-top:4px;
+}
+.add-btn:hover{border-color:var(--primary);color:var(--primary);background:rgba(0,31,77,0.02)}
+.remove-btn{
+width:36px;height:36px;
+border-radius:var(--radius-sm);
+background:var(--danger-bg);
+color:var(--danger);
+display:flex;align-items:center;justify-content:center;
+font-size:12px;
+transition:all var(--transition);
+}
+.remove-btn:hover{background:var(--danger);color:#fff}
+.experience-entry,.education-entry{
+background:var(--surface);
+border-radius:var(--radius-md);
+padding:14px;
+margin-bottom:12px;
+position:relative;
+}
+.entry-remove{
+position:absolute;top:8px;right:8px;
+width:28px;height:28px;
+border-radius:50%;
+background:var(--danger-bg);
+color:var(--danger);
+display:flex;align-items:center;justify-content:center;
+font-size:11px;
+transition:all var(--transition);
+}
+.entry-remove:hover{background:var(--danger);color:#fff}
+.toast-container{
+position:fixed;top:80px;right:20px;
+z-index:var(--z-toast);
+display:flex;flex-direction:column;gap:10px;
+pointer-events:none;
+}
+.toast{
+background:var(--bg);
+border-radius:var(--radius-md);
+box-shadow:var(--shadow-elevated);
+padding:14px 20px;
+font-size:13px;
+font-weight:500;
+color:var(--text-primary);
+border-left:4px solid var(--primary);
+max-width:360px;
+pointer-events:auto;
+animation:slideIn 300ms ease;
+}
+.toast.success{border-left-color:var(--success)}
+.toast.error{border-left-color:var(--danger)}
+.toast.warning{border-left-color:var(--warning)}
+@keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+.divider{height:1px;background:var(--border);margin:16px 0}
+.file-input-hidden{display:none}
+@media(max-width:1024px){
+.main-layout{grid-template-columns:380px 1fr;gap:16px;padding:16px}
+.sidebar{max-height:calc(100vh - 100px)}
+}
+@media(max-width:768px){
+.main-layout{grid-template-columns:1fr;padding:12px;padding-bottom:100px}
+.sidebar{position:static;max-height:none}
+.preview-wrapper{padding:16px}
+.doc-preview{transform:scale(0.5);transform-origin:top left;width:420mm}
+.header{padding:10px 16px}
+.header-tagline{display:none}
+.bottom-bar{display:block}
+.download-section-desktop{display:none}
+.session-badge{bottom:90px;right:12px;font-size:11px;padding:10px 14px}
+}
+@media(max-width:480px){
+.header-brand{font-size:15px}
+.header-logo{width:34px;height:34px;font-size:12px}
+.btn{padding:8px 14px;font-size:13px}
+.template-switcher{grid-template-columns:1fr}
+.paket-grid{grid-template-columns:1fr}
+.form-row{grid-template-columns:1fr}
+}
+@media print{
+body *{display:none!important;visibility:hidden!important}
+}
+</style>
+</head>
+<body>
+<header class="header" role="banner">
+<div class="header-left">
+<div class="header-logo" aria-hidden="true">M</div>
+<div>
+<span class="header-brand">MDMG</span>
+<span class="header-tagline">Platform Dokumen Digital #1 Indonesia</span>
+</div>
+</div>
+<div class="header-right">
+<button class="btn btn-secondary" id="header-voucher-btn" aria-label="Aktivasi Voucher">
+<i class="fas fa-ticket-alt"></i>
+<span id="header-voucher-text">Aktivasi Voucher</span>
+</button>
+</div>
+</header>
+<main class="main-layout" role="main">
+<aside class="sidebar" role="complementary" aria-label="Form CV">
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-header">
+<i class="fas fa-chevron-down"></i> Informasi Pribadi
+</div>
+<div class="sidebar-section-content" id="section-header">
+<div class="form-group">
+<label class="form-label" for="input-name">Nama Lengkap</label>
+<input type="text" class="form-input" id="input-name" placeholder="Budi Santoso" maxlength="100">
+</div>
+<div class="form-group">
+<label class="form-label" for="input-profession">Profesi / Jabatan</label>
+<input type="text" class="form-input" id="input-profession" placeholder="Software Engineer" maxlength="100">
+</div>
+<div class="form-group">
+<label class="form-label" for="input-avatar">Foto Profil (URL)</label>
+<input type="url" class="form-input" id="input-avatar" placeholder="https://example.com/foto.jpg">
+</div>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-contact">
+<i class="fas fa-chevron-down"></i> Kontak
+</div>
+<div class="sidebar-section-content" id="section-contact">
+<div class="form-group">
+<label class="form-label" for="input-phone">Nomor Telepon</label>
+<input type="tel" class="form-input" id="input-phone" placeholder="+62 812-3456-7890">
+</div>
+<div class="form-group">
+<label class="form-label" for="input-email">Email</label>
+<input type="email" class="form-input" id="input-email" placeholder="budi@email.com">
+</div>
+<div class="form-group">
+<label class="form-label" for="input-address">Alamat</label>
+<textarea class="form-textarea" id="input-address" placeholder="Jl. Sudirman No. 123, Jakarta Pusat" rows="2"></textarea>
+</div>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-about">
+<i class="fas fa-chevron-down"></i> Tentang Saya
+</div>
+<div class="sidebar-section-content" id="section-about">
+<div class="form-group">
+<label class="form-label" for="input-about">Deskripsi Singkat</label>
+<textarea class="form-textarea" id="input-about" placeholder="Ceritakan tentang diri Anda..." rows="4"></textarea>
+</div>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-skills">
+<i class="fas fa-chevron-down"></i> Keahlian
+</div>
+<div class="sidebar-section-content" id="section-skills">
+<div id="skills-container"></div>
+<button class="add-btn" id="add-skill-btn" type="button">
+<i class="fas fa-plus"></i> Tambah Keahlian
+</button>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-languages">
+<i class="fas fa-chevron-down"></i> Bahasa
+</div>
+<div class="sidebar-section-content" id="section-languages">
+<div id="languages-container"></div>
+<button class="add-btn" id="add-language-btn" type="button">
+<i class="fas fa-plus"></i> Tambah Bahasa
+</button>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-experience">
+<i class="fas fa-chevron-down"></i> Pengalaman Kerja
+</div>
+<div class="sidebar-section-content" id="section-experience">
+<div id="experience-container"></div>
+<button class="add-btn" id="add-experience-btn" type="button">
+<i class="fas fa-plus"></i> Tambah Pengalaman
+</button>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-education">
+<i class="fas fa-chevron-down"></i> Pendidikan
+</div>
+<div class="sidebar-section-content" id="section-education">
+<div id="education-container"></div>
+<button class="add-btn" id="add-education-btn" type="button">
+<i class="fas fa-plus"></i> Tambah Pendidikan
+</button>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-template">
+<i class="fas fa-chevron-down"></i> Pilih Template
+</div>
+<div class="sidebar-section-content" id="section-template">
+<div class="template-switcher" role="radiogroup" aria-label="Pilih template CV">
+<button class="template-btn active" data-template="1" role="radio" aria-checked="true" aria-label="Template Klasik">
+<i class="fas fa-file-alt"></i>
+Klasik
+</button>
+<button class="template-btn" data-template="2" role="radio" aria-checked="false" aria-label="Template Modern">
+<i class="fas fa-briefcase"></i>
+Modern
+</button>
+<button class="template-btn" data-template="3" role="radio" aria-checked="false" aria-label="Template Minimalis">
+<i class="fas fa-feather"></i>
+Minimalis
+</button>
+</div>
+</div>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-section-title" data-toggle="section-import">
+<i class="fas fa-chevron-down"></i> Import / Export Data
+</div>
+<div class="sidebar-section-content" id="section-import">
+<div class="import-section">
+<div class="import-buttons">
+<button class="btn btn-secondary" id="import-file-btn" type="button">
+<i class="fas fa-file-upload"></i> Upload JSON
+</button>
+<button class="btn btn-secondary" id="import-paste-btn" type="button">
+<i class="fas fa-paste"></i> Paste JSON
+</button>
+</div>
+<input type="file" class="file-input-hidden" id="json-file-input" accept=".json,application/json">
+<textarea class="json-textarea" id="json-paste-input" placeholder="Paste JSON data di sini..."></textarea>
+<button class="btn btn-primary btn-full" id="import-json-btn" type="button" style="margin-top:8px">
+<i class="fas fa-download"></i> Import Data
+</button>
+</div>
+</div>
+</div>
+<div class="auto-save-info">
+<i class="fas fa-check-circle"></i>
+<span>Auto-save: <span id="auto-save-time">Belum disimpan</span></span>
+</div>
+<div class="divider"></div>
+<div class="download-section download-section-desktop">
+<div class="download-note">
+<i class="fas fa-lock"></i> Memerlukan voucher aktif untuk download
+</div>
+<div class="download-buttons">
+<button class="btn btn-primary btn-full" id="download-pdf-btn" type="button">
+<i class="fas fa-file-pdf"></i> Unduh PDF
+</button>
+<button class="btn btn-secondary btn-full" id="download-png-btn" type="button">
+<i class="fas fa-image"></i> Unduh Gambar
+</button>
+</div>
+</div>
+<div class="divider"></div>
+<button class="btn btn-danger btn-full" id="reset-form-btn" type="button">
+<i class="fas fa-trash-alt"></i> Reset Form
+</button>
+</aside>
+<section class="preview-panel" aria-label="Preview CV">
+<div class="preview-toolbar">
+<div class="zoom-controls">
+<button class="zoom-btn" id="zoom-out-btn" aria-label="Perkecil">
+<i class="fas fa-minus"></i>
+</button>
+<span class="zoom-value" id="zoom-value" aria-live="polite">75%</span>
+<button class="zoom-btn" id="zoom-in-btn" aria-label="Perbesar">
+<i class="fas fa-plus"></i>
+</button>
+<button class="zoom-btn" id="zoom-reset-btn" aria-label="Reset zoom">
+<i class="fas fa-expand"></i>
+</button>
+</div>
+<div style="font-size:12px;color:var(--text-muted)">
+<i class="fas fa-eye"></i> Live Preview
+</div>
+</div>
+<div class="preview-wrapper" id="preview-wrapper">
+<div class="doc-preview" id="doc-preview" role="img" aria-label="Preview dokumen CV">
+</div>
+</div>
+</section>
+</main>
+<div class="bottom-bar" role="contentinfo">
+<div class="bottom-bar-buttons">
+<button class="btn btn-primary" id="mobile-download-pdf-btn" type="button">
+<i class="fas fa-file-pdf"></i> Unduh PDF
+</button>
+<button class="btn btn-secondary" id="mobile-download-png-btn" type="button">
+<i class="fas fa-image"></i> Unduh Gambar
+</button>
+</div>
+</div>
+<div class="modal-overlay" id="voucher-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+<div class="modal">
+<button class="modal-close" id="modal-close-btn" aria-label="Tutup modal">
+<i class="fas fa-times"></i>
+</button>
+<div class="modal-header">
+<h2 class="modal-title" id="modal-title">Aktivasi Voucher</h2>
+<p class="modal-subtitle">Masukkan kode untuk mengaktifkan akses download</p>
+</div>
+<div class="modal-body">
+<div class="qris-container">
+<img class="qris-img" id="qris-img" src="" alt="QRIS Payment Code untuk aktivasi voucher MDMG" width="180" height="180">
+<p class="qris-instruction">Scan QRIS di atas untuk pembayaran, atau hubungi WhatsApp kami untuk mendapatkan kode voucher.</p>
+</div>
+<a class="wa-button" id="wa-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Hubungi WhatsApp MDMG">
+<i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+</a>
+<div class="paket-grid" id="paket-grid" role="list" aria-label="Paket voucher tersedia">
+</div>
+<div class="voucher-input-wrapper">
+<input type="text" class="voucher-input" id="voucher-input" placeholder="MASUKKAN KODE" maxlength="20" aria-label="Kode voucher" autocomplete="off">
+</div>
+<div class="voucher-status" id="voucher-status" role="status" aria-live="polite"></div>
+<button class="btn btn-primary btn-full" id="activate-btn" type="button">
+<i class="fas fa-check"></i> AKTIVASI
+</button>
+</div>
+</div>
+</div>
+<div class="loading-overlay" id="loading-overlay" role="status" aria-live="assertive">
+<div class="loading-spinner"></div>
+<div class="loading-text">Memproses dokumen...</div>
+</div>
+<div class="session-badge" id="session-badge" role="status" aria-label="Status voucher aktif">
+<div class="session-badge-title" id="badge-title">Voucher Aktif</div>
+<div class="session-badge-info" id="badge-info"></div>
+</div>
+<div class="toast-container" id="toast-container" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+<script>
+(function(){
+'use strict';
+var BRAND='MDMG';
+var TAGLINE='Platform Dokumen Digital #1 Indonesia';
+var PRIMARY_COLOR='#001f4d';
+var API_URL='https://script.google.com/macros/s/AKfycbxinN3PodknyTo45cQFzBP7VyKq8FwHjMMZmZXzbeCya1WzJSuLySg4RudYjT0jL-aB/exec';
+var QRIS_URL='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/220px-QR_code_for_mobile_English_Wikipedia.svg.png';
+var WA_URL='https://wa.me/6281396974488';
+var WEBSITE_URL='https://www.mainilmu.pro';
+var SESSION_KEY='mdmg_vs';
+var STORAGE_KEY='mdmg_cv_data';
+var AUTO_SAVE_INTERVAL=5000;
+var DEBOUNCE_DELAY=150;
+var state={
+template:1,
+zoom:0.75,
+session:null,
+data:{
+name:'Budi Santoso',
+profession:'Software Engineer',
+avatar:'',
+phone:'+62 812-3456-7890',
+email:'budi.santoso@email.com',
+address:'Jl. Jenderal Sudirman No. 45, Jakarta Pusat 10220',
+about:'Software Engineer berpengalaman 5 tahun dalam pengembangan aplikasi web dan mobile. Memiliki keahlian dalam JavaScript, Python, dan cloud architecture. Berkomitmen untuk menghasilkan kode berkualitas tinggi dan solusi inovatif.',
+skills:[
+{name:'JavaScript',level:5},
+{name:'Python',level:4},
+{name:'React',level:5},
+{name:'Node.js',level:4},
+{name:'UI/UX Design',level:3}
+],
+languages:[
+{name:'Indonesia',level:100},
+{name:'English',level:85},
+{name:'Mandarin',level:40}
+],
+experience:[
+{company:'PT Teknologi Nusantara',position:'Senior Software Engineer',startDate:'Jan 2021',endDate:'Sekarang',description:'Memimpin tim pengembangan 5 orang untuk membangun platform e-commerce dengan 100.000+ pengguna aktif. Mengimplementasikan microservices architecture dan meningkatkan performa aplikasi 40%.'},
+{company:'PT Digital Inovasi',position:'Full Stack Developer',startDate:'Mar 2019',endDate:'Des 2020',description:'Mengembangkan aplikasi web menggunakan React dan Node.js. Berkontribusi dalam 15+ proyek klien dari berbagai industri termasuk fintech dan healthcare.'}
+],
+education:[
+{institution:'Universitas Indonesia',degree:'S1 Teknik Informatika',startDate:'2015',endDate:'2019',description:'IPK 3.75. Aktif dalam organisasi mahasiswa dan proyek riset machine learning.'},
+{institution:'SMA Negeri 1 Jakarta',degree:'IPA',startDate:'2012',endDate:'2015',description:'Juara 1 Olimpiade Komputer tingkat provinsi.'}
+]
+}
+};
+var debounceTimer=null;
+var autoSaveTimer=null;
+function $(sel){return document.querySelector(sel)}
+function $$(sel){return document.querySelectorAll(sel)}
+function showToast(message,type){
+type=type||'info';
+var container=$('#toast-container');
+var toast=document.createElement('div');
+toast.className='toast '+type;
+toast.textContent=message;
+toast.setAttribute('role','alert');
+container.appendChild(toast);
+setTimeout(function(){
+toast.style.opacity='0';
+toast.style.transform='translateX(100%)';
+setTimeout(function(){if(toast.parentNode)toast.parentNode.removeChild(toast)},300);
+},4000);
+}
+function apiFetch(params){
+var url=API_URL+'?'+Object.keys(params).map(function(k){return encodeURIComponent(k)+'='+encodeURIComponent(params[k])}).join('&');
+var retries=0;
+function attempt(){
+return new Promise(function(resolve,reject){
+fetch(url).then(function(res){return res.text()}).then(function(text){
+try{
+var json=JSON.parse(text);
+resolve(json);
+}catch(e){
+reject(new Error('Invalid JSON response'));
+}
+}).catch(function(err){
+if(retries<3){
+retries++;
+setTimeout(function(){attempt().then(resolve).catch(reject)},1000);
+}else{
+reject(err);
+}
+});
+});
+}
+return attempt();
+}
+function getSession(){
+try{
+var raw=sessionStorage.getItem(SESSION_KEY);
+if(!raw)return null;
+var s=JSON.parse(raw);
+if(!s||!s.expired_ts)return null;
+return s;
+}catch(e){return null}
+}
+function saveSession(s){
+try{sessionStorage.setItem(SESSION_KEY,JSON.stringify(s))}catch(e){}
+}
+function clearSession(){
+try{sessionStorage.removeItem(SESSION_KEY)}catch(e){}
+state.session=null;
+updateBadge();
+updateHeaderVoucherBtn();
+}
+function updateBadge(){
+var badge=$('#session-badge');
+var s=getSession();
+if(!s){
+badge.classList.remove('visible');
+return;
+}
+state.session=s;
+badge.classList.add('visible');
+var now=Date.now();
+var remainingMs=s.expired_ts-now;
+if(remainingMs<=0){
+clearSession();
+showToast('Voucher expired, aktivasi voucher baru','warning');
+openVoucherModal();
+return;
+}
+var hours=Math.floor(remainingMs/3600000);
+var mins=Math.floor((remainingMs%3600000)/60000);
+var secs=Math.floor((remainingMs%60000)/1000);
+var timeStr='';
+if(hours>0)timeStr+=hours+'j ';
+timeStr+=mins+'m '+secs+'d';
+var remainingText=s.remaining==='Unlimited'?'Unlimited':s.remaining+' download';
+$('#badge-title').textContent=s.nama_paket||'Voucher Aktif';
+$('#badge-info').innerHTML='Sisa: '+remainingText+'<br>Berlaku: '+timeStr;
+}
+function updateHeaderVoucherBtn(){
+var s=getSession();
+var btn=$('#header-voucher-btn');
+var text=$('#header-voucher-text');
+if(s){
+var remainingText=s.remaining==='Unlimited'?'∞':s.remaining;
+text.textContent='Voucher: '+remainingText;
+btn.classList.remove('btn-secondary');
+btn.classList.add('btn-success');
+}else{
+text.textContent='Aktivasi Voucher';
+btn.classList.remove('btn-success');
+btn.classList.add('btn-secondary');
+}
+}
+function openVoucherModal(){
+$('#voucher-modal').classList.add('active');
+$('#voucher-status').className='voucher-status';
+$('#voucher-status').textContent='';
+$('#voucher-input').value='';
+loadPaketInfo();
+setTimeout(function(){$('#voucher-input').focus()},100);
+}
+function closeVoucherModal(){
+$('#voucher-modal').classList.remove('active');
+}
+function loadPaketInfo(){
+var grid=$('#paket-grid');
+grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:20px;color:var(--text-muted);font-size:13px"><i class="fas fa-spinner fa-spin"></i> Memuat paket...</div>';
+apiFetch({action:'info'}).then(function(res){
+if(res&&res.success&&res.paket&&Array.isArray(res.paket)){
+grid.innerHTML='';
+res.paket.forEach(function(p){
+var card=document.createElement('div');
+card.className='paket-card';
+card.setAttribute('role','listitem');
+card.innerHTML='<div class="paket-price">'+p.harga+'</div><div class="paket-desc">'+p.deskripsi+'</div>';
+grid.appendChild(card);
+});
+}else{
+grid.innerHTML='';
+var defaultPakets=[
+{harga:'Rp 2.000',deskripsi:'1 download • 24 jam'},
+{harga:'Rp 5.000',deskripsi:'10 download • 6 jam'},
+{harga:'Rp 20.000',deskripsi:'Unlimited • 1 jam'},
+{harga:'Rp 50.000',deskripsi:'Unlimited • 1 bulan'}
+];
+defaultPakets.forEach(function(p){
+var card=document.createElement('div');
+card.className='paket-card';
+card.setAttribute('role','listitem');
+card.innerHTML='<div class="paket-price">'+p.harga+'</div><div class="paket-desc">'+p.deskripsi+'</div>';
+grid.appendChild(card);
+});
+}
+}).catch(function(){
+grid.innerHTML='';
+var defaultPakets=[
+{harga:'Rp 2.000',deskripsi:'1 download • 24 jam'},
+{harga:'Rp 5.000',deskripsi:'10 download • 6 jam'},
+{harga:'Rp 20.000',deskripsi:'Unlimited • 1 jam'},
+{harga:'Rp 50.000',deskripsi:'Unlimited • 1 bulan'}
+];
+defaultPakets.forEach(function(p){
+var card=document.createElement('div');
+card.className='paket-card';
+card.setAttribute('role','listitem');
+card.innerHTML='<div class="paket-price">'+p.harga+'</div><div class="paket-desc">'+p.deskripsi+'</div>';
+grid.appendChild(card);
+});
+});
+}
+function activateVoucher(){
+var code=$('#voucher-input').value.trim().toUpperCase();
+if(!code){
+showStatus('error','Masukkan kode voucher terlebih dahulu');
+return;
+}
+var statusEl=$('#voucher-status');
+statusEl.className='voucher-status';
+statusEl.textContent='';
+var btn=$('#activate-btn');
+btn.disabled=true;
+btn.innerHTML='<i class="fas fa-spinner fa-spin"></i> Memvalidasi...';
+apiFetch({action:'validate',code:code}).then(function(res){
+btn.disabled=false;
+btn.innerHTML='<i class="fas fa-check"></i> AKTIVASI';
+if(res&&res.valid){
+var expiredTs=Date.now()+(res.sisa_waktu||86400)*1000;
+var sessionData={
+code:code,
+paket:res.paket,
+nama_paket:res.nama_paket||'Paket '+res.paket,
+remaining:res.remaining,
+expired_ts:expiredTs,
+activated_at:Date.now()
+};
+saveSession(sessionData);
+state.session=sessionData;
+closeVoucherModal();
+updateBadge();
+updateHeaderVoucherBtn();
+var expiredDate=new Date(expiredTs);
+var expiredStr=expiredDate.toLocaleString('id-ID',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+showToast('Voucher '+sessionData.nama_paket+' aktif! Anda memiliki '+res.remaining+' jatah download. Berlaku hingga '+expiredStr,'success');
+}else{
+showStatus('error',res&&res.message?res.message:'Kode voucher tidak valid');
+}
+}).catch(function(err){
+btn.disabled=false;
+btn.innerHTML='<i class="fas fa-check"></i> AKTIVASI';
+showStatus('error','Gagal terhubung ke server. Coba lagi.');
+});
+}
+function showStatus(type,msg){
+var el=$('#voucher-status');
+el.className='voucher-status '+type;
+el.textContent=msg;
+}
+function checkSessionForDownload(format){
+var s=getSession();
+if(!s){
+showToast('Aktivasi voucher terlebih dahulu untuk download','warning');
+openVoucherModal();
+return false;
+}
+var now=Date.now();
+if(now>s.expired_ts){
+clearSession();
+showToast('Voucher expired, aktivasi voucher baru','warning');
+openVoucherModal();
+return false;
+}
+if(s.remaining!=='Unlimited'&&parseInt(s.remaining)<=0){
+clearSession();
+showToast('Jatah download habis, aktivasi voucher baru','warning');
+openVoucherModal();
+return false;
+}
+return true;
+}
+function consumeVoucher(format,callback){
+var s=getSession();
+if(!s)return;
+apiFetch({action:'use',code:s.code}).then(function(res){
+if(res&&res.valid){
+saveSession({
+code:s.code,
+paket:s.paket,
+nama_paket:s.nama_paket,
+remaining:res.remaining,
+expired_ts:s.expired_ts,
+activated_at:s.activated_at
+});
+updateBadge();
+updateHeaderVoucherBtn();
+callback(res.remaining);
+}else{
+clearSession();
+showToast('Voucher tidak valid, aktivasi ulang','error');
+openVoucherModal();
+}
+}).catch(function(){
+showToast('Gagal memverifikasi voucher','error');
+});
+}
+function generatePNG(){
+$('#loading-overlay').classList.add('active');
+var preview=$('#doc-preview');
+html2canvas(preview,{
+scale:2,
+useCORS:true,
+allowTaint:true,
+backgroundColor:'#ffffff',
+logging:false
+}).then(function(canvas){
+canvas.toBlob(function(blob){
+if(blob){
+var filename='CV_'+(state.data.name||'Document').replace(/\s+/g,'_')+'.png';
+saveAs(blob,filename);
+consumeVoucher('PNG',function(remaining){
+$('#loading-overlay').classList.remove('active');
+var remText=remaining==='Unlimited'?'Unlimited':remaining;
+showToast('Gambar berhasil didownload! Sisa: '+remText+' download','success');
+});
+}else{
+$('#loading-overlay').classList.remove('active');
+showToast('Gagal membuat gambar','error');
+}
+},'image/png');
+}).catch(function(err){
+$('#loading-overlay').classList.remove('active');
+showToast('Gagal membuat gambar: '+err.message,'error');
+});
+}
+function generatePDF(){
+$('#loading-overlay').classList.add('active');
+var preview=$('#doc-preview');
+html2canvas(preview,{
+scale:2,
+useCORS:true,
+allowTaint:true,
+backgroundColor:'#ffffff',
+logging:false
+}).then(function(canvas){
+try{
+var jsPDF=window.jspdf.jsPDF;
+var pdf=new jsPDF('p','mm','a4');
+var imgData=canvas.toDataURL('image/png');
+var pdfWidth=210;
+var pdfHeight=297;
+var imgWidth=canvas.width;
+var imgHeight=canvas.height;
+var ratio=imgWidth/imgHeight;
+var scaledWidth=pdfWidth;
+var scaledHeight=pdfWidth/ratio;
+if(scaledHeight>pdfHeight){
+scaledHeight=pdfHeight;
+scaledWidth=pdfHeight*ratio;
+}
+pdf.addImage(imgData,'PNG',0,0,scaledWidth,scaledWidth);
+pdf.save('CV_'+(state.data.name||'Document').replace(/\s+/g,'_')+'.pdf');
+consumeVoucher('PDF',function(remaining){
+$('#loading-overlay').classList.remove('active');
+var remText=remaining==='Unlimited'?'Unlimited':remaining;
+showToast('PDF berhasil didownload! Sisa: '+remText+' download','success');
+});
+}catch(err){
+$('#loading-overlay').classList.remove('active');
+showToast('Gagal membuat PDF: '+err.message,'error');
+}
+}).catch(function(err){
+$('#loading-overlay').classList.remove('active');
+showToast('Gagal membuat PDF: '+err.message,'error');
+});
+}
+function renderPreview(){
+var preview=$('#doc-preview');
+var d=state.data;
+var template=state.template;
+var html='';
+if(template===1){
+html=renderTemplate1(d);
+}else if(template===2){
+html=renderTemplate2(d);
+}else{
+html=renderTemplate3(d);
+}
+preview.innerHTML=html;
+}
+function renderTemplate1(d){
+var skillsHtml=d.skills.map(function(s){
+var stars='';
+for(var i=0;i<5;i++){
+stars+=i<s.level?'<i class="fas fa-star"></i>':'<i class="far fa-star"></i>';
+}
+return '<div class="cv-skill-item"><span class="cv-skill-name">'+escapeHtml(s.name)+'</span><span class="cv-skill-stars">'+stars+'</span></div>';
+}).join('');
+var languagesHtml=d.languages.map(function(l){
+return '<div class="cv-language-item"><div class="cv-lang-circle">'+l.level+'%</div><div class="cv-lang-name">'+escapeHtml(l.name)+'</div></div>';
+}).join('');
+var experienceHtml=d.experience.map(function(e){
+return '<div class="cv-experience-item"><div class="cv-item-header"><div class="cv-item-title">'+escapeHtml(e.company)+'</div><div class="cv-item-date">'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'</div></div><div class="cv-item-subtitle">'+escapeHtml(e.position)+'</div><div class="cv-item-desc">'+escapeHtml(e.description)+'</div></div>';
+}).join('');
+var educationHtml=d.education.map(function(e){
+return '<div class="cv-education-item"><div class="cv-item-header"><div class="cv-item-title">'+escapeHtml(e.institution)+'</div><div class="cv-item-date">'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'</div></div><div class="cv-item-subtitle">'+escapeHtml(e.degree)+'</div><div class="cv-item-desc">'+escapeHtml(e.description)+'</div></div>';
+}).join('');
+var avatarHtml=d.avatar?'<img src="'+escapeHtml(d.avatar)+'" alt="Foto Profil '+escapeHtml(d.name)+'">':'<i class="fas fa-user"></i>';
+return '<div class="cv-template cv-template-1"><div class="cv-header"><div class="cv-header-content"><div class="cv-avatar">'+avatarHtml+'</div><div><div class="cv-name">'+escapeHtml(d.name)+'</div><div class="cv-profession">'+escapeHtml(d.profession)+'</div></div></div></div><div class="cv-body"><div class="cv-sidebar"><div class="cv-sidebar-section"><div class="cv-sidebar-title"><i class="fas fa-address-book"></i> CONTACT</div><div class="cv-contact-item"><i class="fas fa-phone"></i><span>'+escapeHtml(d.phone)+'</span></div><div class="cv-contact-item"><i class="fas fa-envelope"></i><span>'+escapeHtml(d.email)+'</span></div><div class="cv-contact-item"><i class="fas fa-map-marker-alt"></i><span>'+escapeHtml(d.address)+'</span></div></div><div class="cv-sidebar-section"><div class="cv-sidebar-title"><i class="fas fa-lightbulb"></i> SKILLS</div>'+skillsHtml+'</div><div class="cv-sidebar-section"><div class="cv-sidebar-title"><i class="fas fa-language"></i> LANGUAGE</div>'+languagesHtml+'</div></div><div class="cv-main"><div class="cv-main-section"><div class="cv-main-title"><i class="fas fa-user"></i><span class="cv-main-title-text">ABOUT ME</span></div><div class="cv-about-text">'+escapeHtml(d.about)+'</div></div><div class="cv-main-section"><div class="cv-main-title"><i class="fas fa-briefcase"></i><span class="cv-main-title-text">EXPERIENCE</span></div>'+experienceHtml+'</div><div class="cv-main-section"><div class="cv-main-title"><i class="fas fa-graduation-cap"></i><span class="cv-main-title-text">EDUCATION</span></div>'+educationHtml+'</div></div></div></div>';
+}
+function renderTemplate2(d){
+var skillsHtml=d.skills.map(function(s){
+var pct=(s.level/5)*100;
+return '<div class="cv-skill-item"><div class="cv-skill-name">'+escapeHtml(s.name)+'</div><div class="cv-skill-bar"><div class="cv-skill-fill" style="width:'+pct+'%"></div></div></div>';
+}).join('');
+var languagesHtml=d.languages.map(function(l){
+var level='';
+if(l.level>=90)level='Native';
+else if(l.level>=75)level='Fluent';
+else if(l.level>=50)level='Intermediate';
+else level='Basic';
+return '<div class="cv-language-item"><span class="cv-lang-name">'+escapeHtml(l.name)+'</span><span class="cv-lang-level">'+level+'</span></div>';
+}).join('');
+var experienceHtml=d.experience.map(function(e){
+return '<div class="cv-experience-item"><div class="cv-item-header"><div class="cv-item-title">'+escapeHtml(e.company)+'</div><div class="cv-item-date">'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'</div></div><div class="cv-item-subtitle">'+escapeHtml(e.position)+'</div><div class="cv-item-desc">'+escapeHtml(e.description)+'</div></div>';
+}).join('');
+var educationHtml=d.education.map(function(e){
+return '<div class="cv-education-item"><div class="cv-item-header"><div class="cv-item-title">'+escapeHtml(e.institution)+'</div><div class="cv-item-date">'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'</div></div><div class="cv-item-subtitle">'+escapeHtml(e.degree)+'</div><div class="cv-item-desc">'+escapeHtml(e.description)+'</div></div>';
+}).join('');
+var avatarHtml=d.avatar?'<img src="'+escapeHtml(d.avatar)+'" alt="Foto Profil '+escapeHtml(d.name)+'">':'<i class="fas fa-user"></i>';
+return '<div class="cv-template cv-template-2"><div class="cv-header"><div class="cv-avatar">'+avatarHtml+'</div><div><div class="cv-name">'+escapeHtml(d.name)+'</div><div class="cv-profession">'+escapeHtml(d.profession)+'</div></div></div><div class="cv-body"><div class="cv-main"><div class="cv-main-section"><div class="cv-main-title"><i class="fas fa-user"></i> About Me</div><div class="cv-about-text">'+escapeHtml(d.about)+'</div></div><div class="cv-main-section"><div class="cv-main-title"><i class="fas fa-briefcase"></i> Experience</div>'+experienceHtml+'</div><div class="cv-main-section"><div class="cv-main-title"><i class="fas fa-graduation-cap"></i> Education</div>'+educationHtml+'</div></div><div class="cv-sidebar"><div class="cv-sidebar-section"><div class="cv-sidebar-title"><i class="fas fa-address-book"></i> Contact</div><div class="cv-contact-item"><i class="fas fa-phone"></i><span>'+escapeHtml(d.phone)+'</span></div><div class="cv-contact-item"><i class="fas fa-envelope"></i><span>'+escapeHtml(d.email)+'</span></div><div class="cv-contact-item"><i class="fas fa-map-marker-alt"></i><span>'+escapeHtml(d.address)+'</span></div></div><div class="cv-sidebar-section"><div class="cv-sidebar-title"><i class="fas fa-lightbulb"></i> Skills</div>'+skillsHtml+'</div><div class="cv-sidebar-section"><div class="cv-sidebar-title"><i class="fas fa-language"></i> Languages</div>'+languagesHtml+'</div></div></div></div>';
+}
+function renderTemplate3(d){
+var skillsHtml=d.skills.map(function(s){
+var dots='';
+for(var i=0;i<5;i++){
+dots+='<div class="cv-skill-dot'+(i<s.level?' filled':'')+'"></div>';
+}
+return '<div class="cv-skill-item"><span class="cv-skill-name">'+escapeHtml(s.name)+'</span><div class="cv-skill-dots">'+dots+'</div></div>';
+}).join('');
+var languagesHtml=d.languages.map(function(l){
+var level='';
+if(l.level>=90)level='Native';
+else if(l.level>=75)level='Fluent';
+else if(l.level>=50)level='Intermediate';
+else level='Basic';
+return '<div class="cv-language-item"><span class="cv-lang-name">'+escapeHtml(l.name)+'</span><span class="cv-lang-level">'+level+'</span></div>';
+}).join('');
+var experienceHtml=d.experience.map(function(e){
+return '<div class="cv-experience-item"><div class="cv-item-header"><div class="cv-item-title">'+escapeHtml(e.company)+'</div><div class="cv-item-date">'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'</div></div><div class="cv-item-subtitle">'+escapeHtml(e.position)+'</div><div class="cv-item-desc">'+escapeHtml(e.description)+'</div></div>';
+}).join('');
+var educationHtml=d.education.map(function(e){
+return '<div class="cv-education-item"><div class="cv-item-header"><div class="cv-item-title">'+escapeHtml(e.institution)+'</div><div class="cv-item-date">'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'</div></div><div class="cv-item-subtitle">'+escapeHtml(e.degree)+'</div><div class="cv-item-desc">'+escapeHtml(e.description)+'</div></div>';
+}).join('');
+var avatarHtml=d.avatar?'<img src="'+escapeHtml(d.avatar)+'" alt="Foto Profil '+escapeHtml(d.name)+'">':'<i class="fas fa-user"></i>';
+return '<div class="cv-template cv-template-3"><div class="cv-header"><div class="cv-avatar">'+avatarHtml+'</div><div><div class="cv-name">'+escapeHtml(d.name)+'</div><div class="cv-profession">'+escapeHtml(d.profession)+'</div></div></div><div class="cv-body"><div class="cv-main"><div class="cv-main-section"><div class="cv-main-title">About Me</div><div class="cv-about-text">'+escapeHtml(d.about)+'</div></div><div class="cv-main-section"><div class="cv-main-title">Experience</div>'+experienceHtml+'</div><div class="cv-main-section"><div class="cv-main-title">Education</div>'+educationHtml+'</div></div><div class="cv-sidebar"><div class="cv-sidebar-section"><div class="cv-sidebar-title">Contact</div><div class="cv-contact-item"><i class="fas fa-phone"></i><span>'+escapeHtml(d.phone)+'</span></div><div class="cv-contact-item"><i class="fas fa-envelope"></i><span>'+escapeHtml(d.email)+'</span></div><div class="cv-contact-item"><i class="fas fa-map-marker-alt"></i><span>'+escapeHtml(d.address)+'</span></div></div><div class="cv-sidebar-section"><div class="cv-sidebar-title">Skills</div>'+skillsHtml+'</div><div class="cv-sidebar-section"><div class="cv-sidebar-title">Languages</div>'+languagesHtml+'</div></div></div></div>';
+}
+function escapeHtml(text){
+if(!text)return '';
+return String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+}
+function updateDataFromForm(){
+state.data.name=$('#input-name').value||'Nama Anda';
+state.data.profession=$('#input-profession').value||'Profesi Anda';
+state.data.avatar=$('#input-avatar').value;
+state.data.phone=$('#input-phone').value||'+62 xxx-xxxx-xxxx';
+state.data.email=$('#input-email').value||'email@contoh.com';
+state.data.address=$('#input-address').value||'Alamat Anda';
+state.data.about=$('#input-about').value||'Deskripsi tentang diri Anda...';
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+function schedulePreviewUpdate(){
+clearTimeout(debounceTimer);
+debounceTimer=setTimeout(function(){
+requestAnimationFrame(renderPreview);
+},DEBOUNCE_DELAY);
+}
+function scheduleAutoSave(){
+clearTimeout(autoSaveTimer);
+autoSaveTimer=setTimeout(saveToLocalStorage,AUTO_SAVE_INTERVAL);
+}
+function saveToLocalStorage(){
+try{
+var data={
+data:state.data,
+template:state.template,
+timestamp:Date.now()
+};
+localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+var now=new Date();
+var timeStr=now.toLocaleString('id-ID',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+$('#auto-save-time').textContent=timeStr;
+}catch(e){}
+}
+function loadFromLocalStorage(){
+try{
+var raw=localStorage.getItem(STORAGE_KEY);
+if(!raw)return false;
+var data=JSON.parse(raw);
+if(data&&data.data){
+state.data=data.data;
+if(data.template)state.template=data.template;
+populateFormFromData();
+updateTemplateButtons();
+if(data.timestamp){
+var ts=new Date(data.timestamp);
+var timeStr=ts.toLocaleString('id-ID',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'});
+$('#auto-save-time').textContent=timeStr;
+}
+return true;
+}
+}catch(e){}
+return false;
+}
+function populateFormFromData(){
+$('#input-name').value=state.data.name||'';
+$('#input-profession').value=state.data.profession||'';
+$('#input-avatar').value=state.data.avatar||'';
+$('#input-phone').value=state.data.phone||'';
+$('#input-email').value=state.data.email||'';
+$('#input-address').value=state.data.address||'';
+$('#input-about').value=state.data.about||'';
+renderSkills();
+renderLanguages();
+renderExperiences();
+renderEducations();
+}
+function renderSkills(){
+var container=$('#skills-container');
+container.innerHTML='';
+state.data.skills.forEach(function(s,i){
+var row=document.createElement('div');
+row.className='skill-row';
+row.innerHTML='<input type="text" class="form-input skill-name-input" value="'+escapeHtml(s.name)+'" placeholder="Nama keahlian" maxlength="50"><input type="number" class="form-input skill-level-input" value="'+s.level+'" min="1" max="5" placeholder="Level"><button class="remove-btn" data-index="'+i+'" data-type="skill" aria-label="Hapus keahlian"><i class="fas fa-times"></i></button>';
+container.appendChild(row);
+});
+}
+function renderLanguages(){
+var container=$('#languages-container');
+container.innerHTML='';
+state.data.languages.forEach(function(l,i){
+var row=document.createElement('div');
+row.className='language-row';
+row.innerHTML='<input type="text" class="form-input lang-name-input" value="'+escapeHtml(l.name)+'" placeholder="Nama bahasa" maxlength="50"><input type="number" class="form-input lang-level-input" value="'+l.level+'" min="0" max="100" placeholder="Level %"><button class="remove-btn" data-index="'+i+'" data-type="language" aria-label="Hapus bahasa"><i class="fas fa-times"></i></button>';
+container.appendChild(row);
+});
+}
+function renderExperiences(){
+var container=$('#experience-container');
+container.innerHTML='';
+state.data.experience.forEach(function(e,i){
+var entry=document.createElement('div');
+entry.className='experience-entry';
+entry.innerHTML='<button class="entry-remove" data-index="'+i+'" data-type="experience" aria-label="Hapus pengalaman"><i class="fas fa-times"></i></button><div class="form-group"><label class="form-label">Nama Perusahaan</label><input type="text" class="form-input exp-company-input" value="'+escapeHtml(e.company)+'" placeholder="PT Contoh" maxlength="100"></div><div class="form-row"><div class="form-group"><label class="form-label">Posisi</label><input type="text" class="form-input exp-position-input" value="'+escapeHtml(e.position)+'" placeholder="Software Engineer" maxlength="100"></div><div class="form-group"><label class="form-label">Periode</label><input type="text" class="form-input exp-period-input" value="'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'" placeholder="Jan 2020 - Sekarang" maxlength="50"></div></div><div class="form-group"><label class="form-label">Deskripsi</label><textarea class="form-textarea exp-desc-input" placeholder="Deskripsi pekerjaan..." rows="3">'+escapeHtml(e.description)+'</textarea></div>';
+container.appendChild(entry);
+});
+}
+function renderEducations(){
+var container=$('#education-container');
+container.innerHTML='';
+state.data.education.forEach(function(e,i){
+var entry=document.createElement('div');
+entry.className='education-entry';
+entry.innerHTML='<button class="entry-remove" data-index="'+i+'" data-type="education" aria-label="Hapus pendidikan"><i class="fas fa-times"></i></button><div class="form-group"><label class="form-label">Institusi</label><input type="text" class="form-input edu-institution-input" value="'+escapeHtml(e.institution)+'" placeholder="Universitas Contoh" maxlength="100"></div><div class="form-row"><div class="form-group"><label class="form-label">Gelar / Jurusan</label><input type="text" class="form-input edu-degree-input" value="'+escapeHtml(e.degree)+'" placeholder="S1 Teknik Informatika" maxlength="100"></div><div class="form-group"><label class="form-label">Periode</label><input type="text" class="form-input edu-period-input" value="'+escapeHtml(e.startDate)+' - '+escapeHtml(e.endDate)+'" placeholder="2015 - 2019" maxlength="50"></div></div><div class="form-group"><label class="form-label">Deskripsi</label><textarea class="form-textarea edu-desc-input" placeholder="Deskripsi pendidikan..." rows="2">'+escapeHtml(e.description)+'</textarea></div>';
+container.appendChild(entry);
+});
+}
+function collectFormData(){
+state.data.skills=[];
+$$('#skills-container .skill-row').forEach(function(row){
+var name=row.querySelector('.skill-name-input').value.trim();
+var level=parseInt(row.querySelector('.skill-level-input').value)||3;
+if(name){
+state.data.skills.push({name:name,level:Math.max(1,Math.min(5,level))});
+}
+});
+state.data.languages=[];
+$$('#languages-container .language-row').forEach(function(row){
+var name=row.querySelector('.lang-name-input').value.trim();
+var level=parseInt(row.querySelector('.lang-level-input').value)||50;
+if(name){
+state.data.languages.push({name:name,level:Math.max(0,Math.min(100,level))});
+}
+});
+state.data.experience=[];
+$$('#experience-container .experience-entry').forEach(function(entry){
+var company=entry.querySelector('.exp-company-input').value.trim();
+var position=entry.querySelector('.exp-position-input').value.trim();
+var period=entry.querySelector('.exp-period-input').value.trim();
+var desc=entry.querySelector('.exp-desc-input').value.trim();
+if(company||position){
+var parts=period.split(' - ');
+state.data.experience.push({
+company:company||'Perusahaan',
+position:position||'Posisi',
+startDate:parts[0]||'',
+endDate:parts[1]||'',
+description:desc
+});
+}
+});
+state.data.education=[];
+$$('#education-container .education-entry').forEach(function(entry){
+var institution=entry.querySelector('.edu-institution-input').value.trim();
+var degree=entry.querySelector('.edu-degree-input').value.trim();
+var period=entry.querySelector('.edu-period-input').value.trim();
+var desc=entry.querySelector('.edu-desc-input').value.trim();
+if(institution||degree){
+var parts=period.split(' - ');
+state.data.education.push({
+institution:institution||'Institusi',
+degree:degree||'Gelar',
+startDate:parts[0]||'',
+endDate:parts[1]||'',
+description:desc
+});
+}
+});
+}
+function updateTemplateButtons(){
+$$('.template-btn').forEach(function(btn){
+var t=parseInt(btn.dataset.template);
+if(t===state.template){
+btn.classList.add('active');
+btn.setAttribute('aria-checked','true');
+}else{
+btn.classList.remove('active');
+btn.setAttribute('aria-checked','false');
+}
+});
+}
+function setZoom(zoom){
+state.zoom=Math.max(0.3,Math.min(1.5,zoom));
+$('#doc-preview').style.transform='scale('+state.zoom+')';
+$('#zoom-value').textContent=Math.round(state.zoom*100)+'%';
+}
+function handleDownloadRequest(format){
+if(!checkSessionForDownload(format))return;
+$('#loading-overlay').classList.add('active');
+setTimeout(function(){
+if(format==='PDF'){
+generatePDF();
+}else{
+generatePNG();
+}
+},100);
+}
+function handleResetForm(){
+Swal.fire({
+title:'Reset Form?',
+text:'Semua data akan dihapus dan dikembalikan ke default.',
+icon:'warning',
+showCancelButton:true,
+confirmButtonColor:'#d32f2f',
+cancelButtonColor:'#8a95a8',
+confirmButtonText:'Ya, Reset',
+cancelButtonText:'Batal'
+}).then(function(result){
+if(result.isConfirmed){
+state.data={
+name:'Budi Santoso',
+profession:'Software Engineer',
+avatar:'',
+phone:'+62 812-3456-7890',
+email:'budi.santoso@email.com',
+address:'Jl. Jenderal Sudirman No. 45, Jakarta Pusat 10220',
+about:'Software Engineer berpengalaman 5 tahun dalam pengembangan aplikasi web dan mobile.',
+skills:[
+{name:'JavaScript',level:5},
+{name:'Python',level:4},
+{name:'React',level:5}
+],
+languages:[
+{name:'Indonesia',level:100},
+{name:'English',level:85}
+],
+experience:[
+{company:'PT Teknologi Nusantara',position:'Senior Software Engineer',startDate:'Jan 2021',endDate:'Sekarang',description:'Memimpin tim pengembangan.'}
+],
+education:[
+{institution:'Universitas Indonesia',degree:'S1 Teknik Informatika',startDate:'2015',endDate:'2019',description:'IPK 3.75.'}
+]
+};
+populateFormFromData();
+schedulePreviewUpdate();
+saveToLocalStorage();
+showToast('Form berhasil direset','success');
+}
+});
+}
+function handleImportJSON(){
+var jsonStr=$('#json-paste-input').value.trim();
+if(!jsonStr){
+showToast('Paste JSON data terlebih dahulu','warning');
+return;
+}
+try{
+var data=JSON.parse(jsonStr);
+if(data&&data.data){
+state.data=data.data;
+if(data.template)state.template=data.template;
+populateFormFromData();
+updateTemplateButtons();
+schedulePreviewUpdate();
+saveToLocalStorage();
+showToast('Data berhasil diimport','success');
+$('#json-paste-input').value='';
+}else{
+showToast('Format JSON tidak valid','error');
+}
+}catch(e){
+showToast('Gagal parse JSON: '+e.message,'error');
+}
+}
+function handleFileImport(e){
+var file=e.target.files[0];
+if(!file)return;
+var reader=new FileReader();
+reader.onload=function(ev){
+try{
+var data=JSON.parse(ev.target.result);
+if(data&&data.data){
+state.data=data.data;
+if(data.template)state.template=data.template;
+populateFormFromData();
+updateTemplateButtons();
+schedulePreviewUpdate();
+saveToLocalStorage();
+showToast('File JSON berhasil diimport','success');
+}else{
+showToast('Format JSON tidak valid','error');
+}
+}catch(err){
+showToast('Gagal membaca file: '+err.message,'error');
+}
+};
+reader.readAsText(file);
+e.target.value='';
+}
+function setupEventListeners(){
+$('#input-name').addEventListener('input',updateDataFromForm);
+$('#input-profession').addEventListener('input',updateDataFromForm);
+$('#input-avatar').addEventListener('input',updateDataFromForm);
+$('#input-phone').addEventListener('input',updateDataFromForm);
+$('#input-email').addEventListener('input',updateDataFromForm);
+$('#input-address').addEventListener('input',updateDataFromForm);
+$('#input-about').addEventListener('input',updateDataFromForm);
+document.addEventListener('input',function(e){
+if(e.target.classList.contains('skill-name-input')||e.target.classList.contains('skill-level-input')){
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+if(e.target.classList.contains('lang-name-input')||e.target.classList.contains('lang-level-input')){
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+if(e.target.classList.contains('exp-company-input')||e.target.classList.contains('exp-position-input')||e.target.classList.contains('exp-period-input')||e.target.classList.contains('exp-desc-input')){
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+if(e.target.classList.contains('edu-institution-input')||e.target.classList.contains('edu-degree-input')||e.target.classList.contains('edu-period-input')||e.target.classList.contains('edu-desc-input')){
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+});
+document.addEventListener('click',function(e){
+if(e.target.classList.contains('remove-btn')||e.target.closest('.remove-btn')){
+var btn=e.target.classList.contains('remove-btn')?e.target:e.target.closest('.remove-btn');
+var idx=parseInt(btn.dataset.index);
+var type=btn.dataset.type;
+if(type==='skill'){
+state.data.skills.splice(idx,1);
+renderSkills();
+}else if(type==='language'){
+state.data.languages.splice(idx,1);
+renderLanguages();
+}else if(type==='experience'){
+state.data.experience.splice(idx,1);
+renderExperiences();
+}else if(type==='education'){
+state.data.education.splice(idx,1);
+renderEducations();
+}
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+if(e.target.classList.contains('entry-remove')||e.target.closest('.entry-remove')){
+var btn=e.target.classList.contains('entry-remove')?e.target:e.target.closest('.entry-remove');
+var idx=parseInt(btn.dataset.index);
+var type=btn.dataset.type;
+if(type==='experience'){
+state.data.experience.splice(idx,1);
+renderExperiences();
+}else if(type==='education'){
+state.data.education.splice(idx,1);
+renderEducations();
+}
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+}
+});
+$$('.template-btn').forEach(function(btn){
+btn.addEventListener('click',function(){
+state.template=parseInt(btn.dataset.template);
+updateTemplateButtons();
+schedulePreviewUpdate();
+scheduleAutoSave();
+});
+});
+$$('.sidebar-section-title').forEach(function(title){
+title.addEventListener('click',function(){
+var targetId=title.dataset.toggle;
+var content=document.getElementById(targetId);
+if(content){
+content.classList.toggle('collapsed');
+title.classList.toggle('collapsed');
+}
+});
+});
+$('#add-skill-btn').addEventListener('click',function(){
+state.data.skills.push({name:'Keahlian Baru',level:3});
+renderSkills();
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+});
+$('#add-language-btn').addEventListener('click',function(){
+state.data.languages.push({name:'Bahasa Baru',level:50});
+renderLanguages();
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+});
+$('#add-experience-btn').addEventListener('click',function(){
+state.data.experience.push({company:'Perusahaan Baru',position:'Posisi',startDate:'Jan 2020',endDate:'Sekarang',description:'Deskripsi pekerjaan...'});
+renderExperiences();
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+});
+$('#add-education-btn').addEventListener('click',function(){
+state.data.education.push({institution:'Institusi Baru',degree:'Gelar',startDate:'2015',endDate:'2019',description:'Deskripsi pendidikan...'});
+renderEducations();
+collectFormData();
+schedulePreviewUpdate();
+scheduleAutoSave();
+});
+$('#zoom-in-btn').addEventListener('click',function(){setZoom(state.zoom+0.1)});
+$('#zoom-out-btn').addEventListener('click',function(){setZoom(state.zoom-0.1)});
+$('#zoom-reset-btn').addEventListener('click',function(){setZoom(0.75)});
+$('#header-voucher-btn').addEventListener('click',openVoucherModal);
+$('#modal-close-btn').addEventListener('click',closeVoucherModal);
+$('#voucher-modal').addEventListener('click',function(e){
+if(e.target===$('#voucher-modal'))closeVoucherModal();
+});
+$('#activate-btn').addEventListener('click',activateVoucher);
+$('#voucher-input').addEventListener('keydown',function(e){
+if(e.key==='Enter'){
+e.preventDefault();
+activateVoucher();
+}
+});
+$('#download-pdf-btn').addEventListener('click',function(){handleDownloadRequest('PDF')});
+$('#download-png-btn').addEventListener('click',function(){handleDownloadRequest('PNG')});
+$('#mobile-download-pdf-btn').addEventListener('click',function(){handleDownloadRequest('PDF')});
+$('#mobile-download-png-btn').addEventListener('click',function(){handleDownloadRequest('PNG')});
+$('#reset-form-btn').addEventListener('click',handleResetForm);
+$('#import-json-btn').addEventListener('click',handleImportJSON);
+$('#import-file-btn').addEventListener('click',function(){$('#json-file-input').click()});
+$('#json-file-input').addEventListener('change',handleFileImport);
+$('#import-paste-btn').addEventListener('click',function(){
+$('#json-paste-input').focus();
+});
+$('#session-badge').addEventListener('click',openVoucherModal);
+document.addEventListener('keydown',function(e){
+if((e.ctrlKey||e.metaKey)&&e.key==='p'){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.key==='s'){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='I'||e.key==='i')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='J'||e.key==='j')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='C'||e.key==='c')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&(e.key==='U'||e.key==='u')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if(e.key==='F12'){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.altKey&&(e.key==='I'||e.key==='i')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.altKey&&(e.key==='J'||e.key==='j')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+if((e.ctrlKey||e.metaKey)&&e.altKey&&(e.key==='C'||e.key==='c')){
+e.preventDefault();
+showToast('Gunakan tombol download untuk menyimpan dokumen','warning');
+return false;
+}
+});
+document.addEventListener('contextmenu',function(e){
+e.preventDefault();
+return false;
+});
+document.addEventListener('dragstart',function(e){
+e.preventDefault();
+return false;
+});
+document.addEventListener('selectstart',function(e){
+if(e.target.closest('#doc-preview')){
+e.preventDefault();
+return false;
+}
+});
+document.addEventListener('copy',function(e){
+if(e.target.closest('#doc-preview')){
+e.preventDefault();
+return false;
+}
+});
+document.addEventListener('cut',function(e){
+if(e.target.closest('#doc-preview')){
+e.preventDefault();
+return false;
+}
+});
+document.addEventListener('keydown',function(e){
+if(e.key==='Escape'&&$('#voucher-modal').classList.contains('active')){
+closeVoucherModal();
+}
+});
+}
+function initQRISAndWA(){
+var qrisImg=$('#qris-img');
+if(qrisImg)qrisImg.src=QRIS_URL;
+var waLink=$('#wa-link');
+if(waLink)waLink.href=WA_URL;
+}
+function init(){
+initQRISAndWA();
+var loaded=loadFromLocalStorage();
+if(!loaded){
+populateFormFromData();
+}
+updateTemplateButtons();
+renderPreview();
+setupEventListeners();
+updateBadge();
+updateHeaderVoucherBtn();
+setInterval(updateBadge,1000);
+setInterval(saveToLocalStorage,AUTO_SAVE_INTERVAL);
+}
+if(document.readyState==='loading'){
+document.addEventListener('DOMContentLoaded',init);
+}else{
+init();
+}
+})();
+</script>
+</body>
+</html>
